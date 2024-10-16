@@ -20,6 +20,7 @@ Task Service Spring - это микросервис, разработанный 
 4. Запустить приложение:
    ```bash
    ./mvnw spring-boot:run
+5. Task Service будет доступен по адресу http://localhost:8081/api/tasks.
 
 ---
 
