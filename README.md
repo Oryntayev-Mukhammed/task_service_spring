@@ -1,9 +1,3 @@
-
----
-
-### README для `user_service_spring`
-
-```markdown
 # User Service Spring
 
 ## Описание
