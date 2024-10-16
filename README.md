@@ -1,50 +1,50 @@
 # Task Service Spring
 
-## Описание
-Task Service Spring - это микросервис, разработанный с использованием Spring Boot, который управляет задачами в приложении. Этот сервис предоставляет API для создания, обновления, удаления и получения задач, а также взаимодействует с User Service для получения информации о пользователях.
+## Description
+Task Service Spring is a microservice developed using Spring Boot that manages tasks within the application. This service provides an API for creating, updating, deleting, and retrieving tasks, as well as interacting with the User Service to obtain user information.
 
-## Технологии
+## Technologies
 - Spring Boot
 - Spring Data JPA
 - PostgreSQL
 - Feign Client API
 
-## Запуск проекта
-Для запуска проекта необходимо:
-1. Склонировать репозиторий:
+## Running the Project
+To run the project, follow these steps:
+1. Clone the repository:
    ```bash
    git clone <URL>
-2. Перейти в директорию проекта:
+2. Navigate to the project directory:
    ```bash
    cd task_service_spring
-4. Запустить приложение:
+4. Start the application:
    ```bash
    ./mvnw spring-boot:run
-5. Task Service будет доступен по адресу http://localhost:8081/api/tasks.
+5. The Task Service will be available at http://localhost:8081/api/tasks.
 
-## Эндпоинты
-# Задачи
+## Endpoints
+# Tasks
 GET /api/tasks
-Получить список всех задач.
+Retrieve a list of all tasks.
 
 POST /api/tasks
-Создать новую задачу.
-Тело запроса должно содержать JSON с информацией о задаче.
+Create a new task.
+The request body should contain JSON with task information.
 
 PUT /api/tasks/{id}
-Обновить задачу по идентификатору.
-Тело запроса должно содержать JSON с обновленной информацией о задаче.
+Update a task by its identifier.
+The request body should contain JSON with the updated task information.
 
 DELETE /api/tasks/{id}
-Удалить задачу по идентификатору.
+Delete a task by its identifier.
 
-# Пользователи
+# Users
 GET /api/tasks/users
-Получить список всех пользователей.
+Retrieve a list of all users.
 
 GET /api/tasks/users/{id}
-Получить информацию о пользователе по идентификатору.
+Get user information by identifier.
 
 ---
 
-Вы можете настроить эти файлы в зависимости от вашей структуры проекта, специфических требований и особенностей реализации. Если вам нужны дополнительные разделы, такие как "Установка" или "Конфигурация", дайте знать!
+You can customize these files according to your project structure, specific requirements, and implementation details. If you need additional sections such as "Installation" or "Configuration," please let me know!
