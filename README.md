@@ -22,8 +22,8 @@ Task Service Spring - это микросервис, разработанный 
    ./mvnw spring-boot:run
 5. Task Service будет доступен по адресу http://localhost:8081/api/tasks.
 
-##Эндпоинты
-#Задачи
+## Эндпоинты
+# Задачи
 GET /api/tasks
 Получить список всех задач.
 
@@ -38,7 +38,7 @@ PUT /api/tasks/{id}
 DELETE /api/tasks/{id}
 Удалить задачу по идентификатору.
 
-#Пользователи
+# Пользователи
 GET /api/tasks/users
 Получить список всех пользователей.
 
