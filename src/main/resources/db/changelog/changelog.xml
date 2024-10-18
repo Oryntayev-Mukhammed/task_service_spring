@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+    http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="1" author="authorName">
+        <createTable tableName="tasks">
+            <column name="id" type="BIGSERIAL">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="VARCHAR(255)"/>
+            <column name="description" type="TEXT"/>
+            <column name="deadline_date" type="DATE"/>
+            <column name="status" type="INTEGER"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+
+        <insert tableName="tasks">
+            <column name="title" value="Sample Task"/>
+            <column name="description" value="This is a sample task."/>
+            <column name="deadline_date" valueDate="2024-12-31"/>
+            <column name="status" value="0"/>
+            <column name="user_id" value="1"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
