@@ -83,7 +83,7 @@ public class TaskController {
 
     @GetMapping("/kola")
     public String Kola() {
-        return "Kola";
+        return "Soda";
     }
 
 }
